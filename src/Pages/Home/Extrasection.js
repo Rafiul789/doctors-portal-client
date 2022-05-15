@@ -2,7 +2,7 @@ import React from 'react';
 import image from '../../assets/images/treatment.png';
 const Extrasection = () => {
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-200  my-12">
         <div className="hero-content flex-col lg:flex-row">
           <img src={image} alt="treatment" className="max-w-sm rounded-lg shadow-2xl" />
           <div>
