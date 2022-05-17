@@ -1,5 +1,6 @@
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
+import BookingModal from './BookingModal';
 import Service from './Service';
 
 const AvailableAppointment = ({date}) => {
@@ -32,7 +33,7 @@ fetch('services.json')
                     ></Service>)
                 }
             </div>
-
+{treatment&&<BookingModal date={date} treatment={treatment}  ></BookingModal>}
 
         </div>
     );
