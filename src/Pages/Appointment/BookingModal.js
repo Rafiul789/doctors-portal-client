@@ -1,7 +1,8 @@
 import { format } from 'date-fns';
 import React from 'react';
-import { useAuthState } from 'firebase/auth';
-import {auth} from '../../Firebase/firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
+
+import auth from '../../Firebase/firebase.init';
 
 const BookingModal = ({date,treatment,setTreatment}) => {
     const {_id,name,slots}=treatment;
